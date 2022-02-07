@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import CardTour from "./components/CardTour";
+import seperate from "./seperate";
 
 function App() {
+
+  const cards = seperate.map (item => {
+    return (
+      <CardTour 
+      item = {item}
+      />
+    )
+  })
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <section className="card_section">
+        {cards}
+      </section>
     </div>
   );
 }

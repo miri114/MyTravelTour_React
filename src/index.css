@@ -7,7 +7,65 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navbar {
+  display: flex;
+  height: 70px;
+  background-color: rgb(151, 8, 8);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  margin: 10px;
+  color: white;
+}
+
+.navbar--icon {
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+.card_tour {
+  display: flex;
+  height: 300px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  margin: 10px;
+  border-radius: 5px;
+
+}
+
+.card_tour--img {
+  height: 100%;
+  width: 95%;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.card_tour--place {
+  height: 100%;
+}
+
+
+.card_tour--location {
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 25px;
+} 
+
+.card_tour--describe {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+
+
